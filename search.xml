@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[杀掉某个端口进程]]></title>
+    <url>%2F2018%2F08%2F03%2F%E6%9D%80%E6%8E%89%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%BF%9B%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[1.打开CMD命令窗口，输入命令： netstat -ano | findstr 4000 //4000是需要杀掉的端口号 2.通过以上命令找到该进程的PID,然后就可以执行杀死操作 taskkill -PID 14544 -F /14544为该进程的PID/]]></content>
+      <categories>
+        <category>知识小记</category>
+      </categories>
+      <tags>
+        <tag>windows</tag>
+        <tag>操作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[你好，Hexo]]></title>
+    <url>%2F2018%2F08%2F02%2F%E4%BD%A0%E5%A5%BD%EF%BC%8CHexo%2F</url>
+    <content type="text"><![CDATA[开始记录自己的学习历程]]></content>
+      <categories>
+        <category>点滴</category>
+      </categories>
+      <tags>
+        <tag>JAVA</tag>
+        <tag>SPRINGBOOT</tag>
+        <tag>VUE</tag>
+        <tag>SQLSERVER</tag>
+      </tags>
+  </entry>
+</search>
