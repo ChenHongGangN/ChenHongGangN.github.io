@@ -391,7 +391,7 @@
 public String sayHello(){
     return &quot;hello&quot;;
 }
-</code></pre><p>}<br>如果直接使用@Controller这个注解，当运行该SpringBoot项目后，在浏览器中输入：local:8080/hello,会得到如下错误提示： </p>
+</code></pre><p>}<br>如果直接使用@Controller这个注解，当运行该SpringBoot项目后，在浏览器中输入：local:8080/hello,会得到如下错误提示：<br><img src="/2018/08/10/SpringBoot中常用注解-Controller-RestController-RequestMapping的区别/3.png" alt="错误提示"></p>
 <p>出现这种情况的原因在于：没有使用模版。即@Controller 用来响应页面，@Controller必须配合模版来使用。spring-boot 支持多种模版引擎包括：<br>1，FreeMarker<br>2，Groovy<br>3，Thymeleaf （Spring 官网使用这个）<br>4，Velocity<br>5，JSP （貌似Spring Boot官方不推荐，STS创建的项目会在src/main/resources 下有个templates 目录，这里就是让我们放模版文件的，然后并没有生成诸如 SpringMVC 中的webapp目录）</p>
 <p>本文以Thymeleaf为例介绍使用模版，具体步骤如下：</p>
 <p>第一步：在pom.xml文件中添加如下模块依赖：</p>
