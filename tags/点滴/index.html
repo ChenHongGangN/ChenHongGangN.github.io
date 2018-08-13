@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="害怕什么">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/点滴/index.html">
 <meta property="og:site_name" content="害怕什么">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -115,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/点滴/"/>
 
 
 
 
 
-  <title>害怕什么</title>
+  <title>标签: 点滴 | 害怕什么</title>
   
 
 
@@ -140,8 +140,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right ">
     <div class="headband"></div>
 	<a href="https://github.com/ChenHongGangN"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,672 +277,53 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block tag">
+
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>点滴<small>标签</small>
+        </h1>
+      </div>
+
       
-
-  
-
-  
-  
-  
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/vue之计算缓存-VS-Methods/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈红刚">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/self/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="害怕什么">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/08/02/你好，Hexo/" itemprop="url">
+              
+                <span itemprop="name">你好，Hexo</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/13/vue之计算缓存-VS-Methods/" itemprop="url">vue之计算缓存 VS Methods</a></h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-13T22:57:28+08:00">
-                2018-08-13
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-08-02T13:29:04+08:00"
+              content="2018-08-02" >
+          08-02
+        </time>
+      </div>
 
-            
+    </header>
+  </article>
 
-            
-          </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>计算属性<br>在模板中绑定表达式是非常便利的，但是它们实际上只用于简单的操作。在模板中放入太多的逻辑会让模板过重且难以维护。例如：<br><img src="/2018/08/13/vue之计算缓存-VS-Methods/1.png" alt="1"></p>
-<p>在这种情况下，模板不再简单和清晰。在实现反向显示 message 之前，你应该确认它。这个问题在你不止一次反向显示 message 的时候变得更加糟糕。</p>
-<p>这就是为什么任何复杂逻辑，你都应当使用计算属性。</p>
-<p>基础例子</p>
-<p><img src="/2018/08/13/vue之计算缓存-VS-Methods/2.png" alt="2"></p>
-<p>结果：</p>
-<p>Original message: “Hello”</p>
-<p>Computed reversed message: “olleH”</p>
-<p>这里我们声明了一个计算属性 reversedMessage 。我们提供的函数将用作属性 vm.reversedMessage 的 getter 。<br><img src="/2018/08/13/vue之计算缓存-VS-Methods/3.png" alt="3"></p>
-<p>你可以打开浏览器的控制台，修改 vm 。 vm.reversedMessage 的值始终取决于 vm.message 的值。</p>
-<p>你可以像绑定普通属性一样在模板中绑定计算属性。 Vue 知道 vm.reversedMessage 依赖于 vm.message ，因此当 vm.message 发生改变时，依赖于 vm.reversedMessage 的绑定也会更新。而且最妙的是我们是声明式地创建这种依赖关系：计算属性的 getter 是干净无副作用的，因此也是易于测试和理解的。</p>
-<p>计算缓存 vs Methods<br>你可能已经注意到我们可以通过调用表达式中的method来达到同样的效果：</p>
-<p><img src="/2018/08/13/vue之计算缓存-VS-Methods/4.png" alt="4"></p>
-<p>不经过计算属性，我们可以在 method 中定义一个相同的函数来替代它。对于最终的结果，两种方式确实是相同的。然而，不同的是计算属性是基于它的依赖缓存。计算属性只有在它的相关依赖发生改变时才会重新取值。这就意味着只要 message 没有发生改变，多次访问 reversedMessage 计算属性会立即返回之前的计算结果，而不必再次执行函数。</p>
-<p>这也同样意味着如下计算属性将不会更新，因为 Date.now() 不是响应式依赖：</p>
-<p><img src="/2018/08/13/vue之计算缓存-VS-Methods/5.png" alt="5"></p>
-<p>相比而言，每当重新渲染的时候，method 调用总会执行函数。</p>
-<p>我们为什么需要缓存？假设我们有一个重要的计算属性 A ，这个计算属性需要一个巨大的数组遍历和做大量的计算。然后我们可能有其他的计算属性依赖于 A 。如果没有缓存，我们将不可避免的多次执行 A 的 getter ！如果你不希望有缓存，请用 method 替代。</p>
-
-          
-        
       
     </div>
-    
-    
-    
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/10/SpringBoot中常用注解-Controller-RestController-RequestMapping的区别/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈红刚">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/self/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="害怕什么">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/10/SpringBoot中常用注解-Controller-RestController-RequestMapping的区别/" itemprop="url">SpringBoot中常用注解@Controller,@RestController,@RequestMapping的区别</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-10T01:03:39+08:00">
-                2018-08-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SpringBoot/" itemprop="url" rel="index">
-                    <span itemprop="name">SpringBoot</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>@Controller 处理http请求<br>@Controller<br>//@ResponseBody<br>public class HelloController {</p>
-<pre><code>@RequestMapping(value=&quot;/hello&quot;,method= RequestMethod.GET)
-public String sayHello(){
-    return &quot;hello&quot;;
-}
-</code></pre><p>}<br>如果直接使用@Controller这个注解，当运行该SpringBoot项目后，在浏览器中输入：local:8080/hello,会得到如下错误提示：<br><img src="/2018/08/10/SpringBoot中常用注解-Controller-RestController-RequestMapping的区别/3.png" alt="错误提示"></p>
-<p>出现这种情况的原因在于：没有使用模版。即@Controller 用来响应页面，@Controller必须配合模版来使用。spring-boot 支持多种模版引擎包括：<br>1，FreeMarker<br>2，Groovy<br>3，Thymeleaf （Spring 官网使用这个）<br>4，Velocity<br>5，JSP （貌似Spring Boot官方不推荐，STS创建的项目会在src/main/resources 下有个templates 目录，这里就是让我们放模版文件的，然后并没有生成诸如 SpringMVC 中的webapp目录）</p>
-<p>本文以Thymeleaf为例介绍使用模版，具体步骤如下：</p>
-<p>第一步：在pom.xml文件中添加如下模块依赖：</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;
-&lt;/dependency&gt;
-</code></pre><p>第二步：修改控制器代码，具体为：</p>
-<p>/**</p>
-<ul>
-<li><p>Created by wuranghao on 2017/4/7.<br>*/<br>@Controller<br>public class HelloController {</p>
-<p> @RequestMapping(value=”/hello”,method= RequestMethod.GET)<br> public String sayHello(){</p>
-<pre><code>return &quot;hello&quot;;
-</code></pre><p> }<br>}<br>第三步：在resources目录的templates目录下添加一个hello.html文件，具体工程目录结构如下：<br><img src="/2018/08/10/SpringBoot中常用注解-Controller-RestController-RequestMapping的区别/1.png" alt="图片"></p>
-</li>
-</ul>
-<p>其中，hello.html文件中的内容为：</p>
-<p> </p><h1>wojiushimogui</h1><br>这样，再次运行此项目之后，在浏览器中输入：localhost:8080/hello<p></p>
-<p>就可以看到hello.html中所呈现的内容了。</p>
-<p>因此，我们就直接使用@RestController注解来处理http请求来，这样简单的多。</p>
-<p>@RestController<br>Spring4之后新加入的注解，原来返回json需要@ResponseBody和@Controller配合。</p>
-<p>即@RestController是@ResponseBody和@Controller的组合注解。</p>
-<p>@RestController<br>public class HelloController {</p>
-<pre><code>@RequestMapping(value=&quot;/hello&quot;,method= RequestMethod.GET)
-public String sayHello(){
-    return &quot;hello&quot;;
-}
-</code></pre><p>}<br>与下面的代码作用一样</p>
-<p>@Controller<br>@ResponseBody<br>public class HelloController {</p>
-<pre><code>@RequestMapping(value=&quot;/hello&quot;,method= RequestMethod.GET)
-public String sayHello(){
-    return &quot;hello&quot;;
-}
-</code></pre><p>}<br>@RequestMapping 配置url映射<br>@RequestMapping此注解即可以作用在控制器的某个方法上，也可以作用在此控制器类上。</p>
-<p>当控制器在类级别上添加@RequestMapping注解时，这个注解会应用到控制器的所有处理器方法上。处理器方法上的@RequestMapping注解会对类级别上的@RequestMapping的声明进行补充。</p>
-<p>看两个例子</p>
-<p>例子一：@RequestMapping仅作用在处理器方法上</p>
-<p>@RestController<br>public class HelloController {</p>
-<pre><code>@RequestMapping(value=&quot;/hello&quot;,method= RequestMethod.GET)
-public String sayHello(){
-    return &quot;hello&quot;;
-}
-</code></pre><p>}<br>以上代码sayHello所响应的url=localhost:8080/hello。</p>
-<p>例子二：@RequestMapping仅作用在类级别上</p>
-<p>/**</p>
-<ul>
-<li><p>Created by wuranghao on 2017/4/7.<br>*/<br>@Controller<br>@RequestMapping(“/hello”)<br>public class HelloController {</p>
-<p> @RequestMapping(method= RequestMethod.GET)<br> public String sayHello(){</p>
-<pre><code>return &quot;hello&quot;;
-</code></pre><p> }<br>}<br>以上代码sayHello所响应的url=localhost:8080/hello,效果与例子一一样，没有改变任何功能。</p>
-</li>
-</ul>
-<p>例子三：@RequestMapping作用在类级别和处理器方法上</p>
-<p>/**</p>
-<ul>
-<li><p>Created by wuranghao on 2017/4/7.<br>*/<br>@RestController<br>@RequestMapping(“/hello”)<br>public class HelloController {</p>
-<p> @RequestMapping(value=”/sayHello”,method= RequestMethod.GET)<br> public String sayHello(){</p>
-<pre><code>return &quot;hello&quot;;
-</code></pre><p> }<br> @RequestMapping(value=”/sayHi”,method= RequestMethod.GET)<br> public String sayHi(){</p>
-<pre><code>return &quot;hi&quot;;
-</code></pre><p> }<br>}<br>这样，以上代码中的sayHello所响应的url=localhost:8080/hello/sayHello。</p>
-</li>
-</ul>
-<p>sayHi所响应的url=localhost:8080/hello/sayHi。<br><img src="/2018/08/10/SpringBoot中常用注解-Controller-RestController-RequestMapping的区别/2.png" alt="图片"></p>
-<p>从这两个方法所响应的url可以回过头来看这两句话：当控制器在类级别上添加@RequestMapping注解时，这个注解会应用到控制器的所有处理器方法上。处理器方法上的@RequestMapping注解会对类级别上的@RequestMapping的声明进行补充。</p>
-<p>最后说一点的是@RequestMapping中的method参数有很多中选择，一般使用get/post.</p>
-<p>小结<br>本篇博文就介绍了下@Controller/@RestController/@RequestMappping几种常用注解，下篇博文将介绍几种如何处理url中的参数的注解@PathVaribale/@RequestParam/@GetMapping。</p>
-<p>其中，各注解的作用为：</p>
-<p>@PathVaribale 获取url中的数据</p>
-<p>@RequestParam 获取请求参数的值</p>
-<p>@GetMapping 组合注解</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/03/杀掉某个端口进程/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈红刚">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/self/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="害怕什么">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/03/杀掉某个端口进程/" itemprop="url">杀掉某个端口进程</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-03T08:48:19+08:00">
-                2018-08-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/知识小记/" itemprop="url" rel="index">
-                    <span itemprop="name">知识小记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1.打开CMD命令窗口，输入命令：<br>    netstat -ano | findstr 4000    //4000是需要杀掉的端口号</p>
-<p>2.通过以上命令找到该进程的PID,然后就可以执行杀死操作<br>    taskkill -PID 14544 -F   /<em>14544为该进程的PID</em>/</p>
-<p><img src="/2018/08/03/杀掉某个端口进程/kill.png" alt="范例"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/02/你好，Hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈红刚">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/self/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="害怕什么">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/02/你好，Hexo/" itemprop="url">你好，Hexo</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-02T13:29:04+08:00">
-                2018-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/点滴/" itemprop="url" rel="index">
-                    <span itemprop="name">点滴</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>开始记录自己的学习历程</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
 
   
 
