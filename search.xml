@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java中static、final、static final的区别（转）]]></title>
+    <url>%2F2018%2F09%2F06%2Fjava%E4%B8%ADstatic%E3%80%81final%E3%80%81static-final%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[说明：不一定准确，但是最快理解。 final： final可以修饰：属性，方法，类，局部变量（方法中的变量） final修饰的属性的初始化可以在编译期，也可以在运行期，初始化后不能被改变。 final修饰的属性跟具体对象有关，在运行期初始化的final属性，不同对象可以有不同的值。 final修饰的属性表明是一个常数（创建后不能被修改）。 final修饰的方法表示该方法在子类中不能被重写，final修饰的类表示该类不能被继承。 对于基本类型数据，final会将值变为一个常数（创建后不能被修改）；但是对于对象句柄（亦可称作引用或者指针），final会将句柄变为一个常数（进行声明时，必须将句柄初始化到一个具体的对象。而且不能再将句柄指向另一个对象。但是，对象的本身是可以修改的。这一限制也适用于数组，数组也属于对象，数组本身也是可以修改的。方法参数中的final句柄，意味着在该方法内部，我们不能改变参数句柄指向的实际东西，也就是说在方法内部不能给形参句柄再另外赋值）。 static： static可以修饰：属性，方法，代码段，内部类（静态内部类或嵌套内部类） static修饰的属性的初始化在编译期（类加载的时候），初始化后能改变。 static修饰的属性所有对象都只有一个值。 static修饰的属性强调它们只有一个。 static修饰的属性、方法、代码段跟该类的具体对象无关，不创建对象也能调用static修饰的属性、方法等 static和“this、super”势不两立，static跟具体对象无关，而this、super正好跟具体对象有关。 static不可以修饰局部变量。 static final和final static： static final和final static没什么区别，一般static写在前面。 static final： static修饰的属性强调它们只有一个，final修饰的属性表明是一个常数（创建后不能被修改）。static final修饰的属性表示一旦给值，就不可修改，并且可以通过类名访问。 static final也可以修饰方法，表示该方法不能重写，可以在不new对象的情况下调用]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[javascript 中常用的方法]]></title>
     <url>%2F2018%2F08%2F16%2Fjavascript-%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[1.splice()arrayObject.splice(index,howmany,item1,…..,itemX)参数 描述index 必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。howmany 必需。要删除的项目数量。如果设置为 0，则不会删除项目。item1, …, itemX 可选。向数组添加的新项目。 2.slice()该方法可从已有的数组中返回选定的元素 返回一个新的数组，包含从 start 到 end （不包括该元素）的 arrayObject 中的元素。arrayObject.slice(start,end)start 必需。规定从何处开始选取。如果是负数，那么它规定从数组尾部开始算起的位置。也就是说，-1 指最后一个元素，-2 指倒数第二个元素，以此类推。end 可选。规定从何处结束选取。该参数是数组片断结束处的数组下标。如果没有指定该参数，那么切分的数组包含从 start 到数组结束的所有元素。如果这个参数是负数，那么它规定的是从数组尾部开始算起的元素。 3.push()arrayObject.push(newelement1,newelement2,….,newelementX)push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。newelement1 必需。要添加到数组的第一个元素。newelement2 可选。要添加到数组的第二个元素。newelementX 可选。可添加多个元素。 4.pop()arrayObject.pop()pop() 方法用于删除并返回数组的最后一个元素。 5.unshift()arrayObject.unshift(newelement1,newelement2,….,newelementX)unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。 6.shift()arrayObject.shift()shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值。 7.sort()arrayObject.sort(sortby)sort() 方法用于对数组的元素进行排序。sortby 可选。规定排序顺序。必须是函数。 8.reverse()arrayObject.reverse()reverse() 方法用于颠倒数组中元素的顺序。]]></content>
