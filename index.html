@@ -1077,6 +1077,10 @@ public String sayHello(){
             <p>1.打开CMD命令窗口，输入命令：<br>    netstat -ano | findstr 4000    //4000是需要杀掉的端口号</p>
 <p>2.通过以上命令找到该进程的PID,然后就可以执行杀死操作<br>    taskkill -PID 14544 -F   /<em>14544为该进程的PID</em>/</p>
 <p><img src="/2018/08/03/杀掉某个端口进程/kill.png" alt="范例"></p>
+<hr>
+<p>linux 命令杀死占用端口的所有进程<br>首先可以用lsof查看占用端口的进程号<br>lsof -i:端口号</p>
+<p>然后kill掉占用的进程，就可以再次启动server了<br>kill -9 进程号</p>
+<p>当然上述还是有些麻烦，因此可以用以下一条命令代替：<br>sudo kill -9 $(lsof -i:端口号 -t)</p>
 
           
         

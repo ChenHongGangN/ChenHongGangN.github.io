@@ -49,7 +49,7 @@
   <entry>
     <title><![CDATA[杀掉某个端口进程]]></title>
     <url>%2F2018%2F08%2F03%2F%E6%9D%80%E6%8E%89%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%BF%9B%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[1.打开CMD命令窗口，输入命令： netstat -ano | findstr 4000 //4000是需要杀掉的端口号 2.通过以上命令找到该进程的PID,然后就可以执行杀死操作 taskkill -PID 14544 -F /14544为该进程的PID/]]></content>
+    <content type="text"><![CDATA[1.打开CMD命令窗口，输入命令： netstat -ano | findstr 4000 //4000是需要杀掉的端口号 2.通过以上命令找到该进程的PID,然后就可以执行杀死操作 taskkill -PID 14544 -F /14544为该进程的PID/ linux 命令杀死占用端口的所有进程首先可以用lsof查看占用端口的进程号lsof -i:端口号 然后kill掉占用的进程，就可以再次启动server了kill -9 进程号 当然上述还是有些麻烦，因此可以用以下一条命令代替：sudo kill -9 $(lsof -i:端口号 -t)]]></content>
       <categories>
         <category>知识小记</category>
       </categories>
